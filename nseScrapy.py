@@ -23,7 +23,7 @@ currentDT = datetime.datetime.now()
 
 
 def getData(symbolCode):
-    stockData = get_history(symbol=symbolCode, start=date(1990, 3, 1),
+    stockData = get_history(symbol=symbolCode, start=date(1957, 3, 1),
                             end=date(currentDT.year, currentDT.month, currentDT.day))
     prefix = 'dataOf_'
     suffix = '.csv'
